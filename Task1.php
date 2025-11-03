@@ -11,20 +11,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo 'Username: ' . htmlspecialchars($username) . '<br>';
 }
 
-// valor seleccionado persistente
 $selected = isset($_POST['username']) ? $_POST['username'] : '';
 
 //TASK 2 
-
-define('PI', 3.1416);
-define('RadioConst', 5);
-
-function calculateCircleArea(): void
-{
-    $area = PI * RadioConst * RadioConst;
-    echo "L'àrea del cercle és: " . number_format($area) . "<br>";
-}
-
 
 
 
@@ -34,27 +23,6 @@ calculateCircleArea();
 
 
 ///TASK 3 
-class Person
-{
-    public $username;
-
-    public function __construct($username)
-    {
-        $this->username = $username;
-    }
-
-    public function __toString()
-    {
-        return "Hola, sóc " . $this->username;
-    }
-}
-
-
-$persona = new Person('Lucas');
-
-echo $persona;
-
-
 
 
 ?>
